@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "ratling_dog"
+
+def run(song)
+   display_lyrics(song)
+end
+
+def display_lyrics(song)
+    puts "#{song.chorus}"
+    puts
+    puts "#{song.verse(1)}"
+    puts
+    puts "#{song.chorus}"
+    puts
+    puts "#{song.verse(2)}"
+    puts
+    puts "#{song.chorus}"
+end
+
+if __FILE__ == $PROGRAM_NAME
+    song = RatlingDog::Song.new
+    run(song)
+end

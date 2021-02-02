@@ -43,7 +43,7 @@ class SongLineGen
         when 9 
             "And on that tree there was a branch,"
         when 10
-            "A rare branch, a rattlin' branch\n"
+            "A rare branch, a rattlin' branch,"
         when 11
             "The branch on the tree, and the tree in the bog,"
         when 12
